@@ -1,0 +1,2 @@
+db.Person.createIndex({ email: 1 }, { unique: true });
+db.Favourite.createIndex({ favourite_name: 1 }, { unique: true });

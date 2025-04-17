@@ -1,0 +1,41 @@
+db.Favourite.aggregate([
+  {
+    $match: { favourite_name: "Hiking" }
+  },
+  {
+    $lookup: {
+      from: "Person",
+      localField: "person_ids",
+      foreignField: "_id",
+      as: "persons"
+    }
+  },
+  {
+    $unwind: "$persons"
+  },
+  {
+    $set: {
+      age: {
+        $floor: {
+          $divide: [
+            { $subtract: ["$$NOW", "$persons.dob"] },
+            1000 * 60 * 60 * 24 * 365.25
+          ]
+        }
+      }
+    }
+  },
+  {
+    $group: {
+      _id: null,
+      average_age: { $avg: "$age" }
+    }
+  },
+  {
+    $project: {
+      average_age: { $round: ["$average_age", 1] },
+      _id: 0
+    }
+  }
+]);
+

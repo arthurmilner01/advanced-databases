@@ -1,0 +1,75 @@
+{
+    "$jsonSchema": {
+      "bsonType": "object",
+      "required": ["first_name", "last_name", "email", "dob", "addresses"],
+      "properties": {
+            "first_name": {
+            "bsonType": "string",
+            "description": "Must be a string."
+            },
+            "last_name": {
+            "bsonType": "string",
+            "description": "Must be a string."
+            },
+            "email": { 
+            "bsonType": "string", 
+            "pattern": "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$", 
+            "description": "Must be a valid email." 
+            },
+            "dob": { 
+            "bsonType": "date",
+            "description": "Must be a date." 
+            },
+            "addresses": {
+                "bsonType": "array",
+                "minItems": 1,
+                "items": {
+                    "bsonType": "object",
+                    "required": ["street", "zip_code", "city", "country", "neighbours"],
+                    "properties": {
+                        "street": { 
+                            "bsonType": "string", 
+                            "description": "Must be a string." 
+                        },
+                        "zip_code": { 
+                            "bsonType": "string", 
+                            "description": "Must be a string." 
+                        },
+                        "city": { 
+                            "bsonType": "string", 
+                            "description": "Must be a string." 
+                        },
+                        "country": { 
+                            "bsonType": "string", 
+                            "description": "Must be a string." 
+                        },
+                        "neighbours": {
+                            "bsonType": "array",
+                            "minItems": 1,
+                            "items": {
+                                "bsonType": "object",
+                                "required": ["neighbour_first_name", "neighbour_last_name", "neighbour_email"],
+                                "properties": {
+                                    "neighbour_first_name": {
+                                        "bsonType": "string",
+                                        "description": "Must be a string."
+                                    },
+                                    "neighbour_last_name": {
+                                        "bsonType": "string",
+                                        "description": "Must be a string."
+                                    },
+                                    "neighbour_email": { 
+                                        "bsonType": "string", 
+                                        "pattern": "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$", 
+                                        "description": "Must be a valid email." 
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

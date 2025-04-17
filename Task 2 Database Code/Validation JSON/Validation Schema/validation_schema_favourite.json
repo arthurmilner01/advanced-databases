@@ -1,0 +1,24 @@
+{
+    "$jsonSchema": {
+      "bsonType": "object",
+      "required": ["favourite_name","favourite_type","person_ids"],
+      "properties": {
+        "favourite_name": {
+          "bsonType": "string",
+          "description": "Must be a string."
+        },
+        "favourite_type": {
+          "bsonType": "string",
+          "description": "Must be a string."
+        },
+        "person_ids": {
+        "bsonType": "array",
+        "items": {
+          "bsonType": "objectId"
+        },
+        "description": "Must contain valid person IDs."
+        }
+      }
+    }
+}
+

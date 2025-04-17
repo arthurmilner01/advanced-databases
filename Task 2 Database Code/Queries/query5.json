@@ -1,0 +1,13 @@
+db.Person.find(
+  {
+    "addresses.neighbours.neighbour_first_name": "Neighbor",
+    "addresses.neighbours.neighbour_last_name": "C"
+  },
+  {
+    _id: 0,
+    first_name: 1,
+    last_name: 1,
+    email: 1
+  }
+);
+

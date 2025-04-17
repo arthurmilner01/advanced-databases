@@ -1,0 +1,523 @@
+db.Person.insertMany([
+    {
+        "first_name": "Person",
+        "last_name": "1",
+        "email": "person1@email.com",
+        "dob": new Date("1995-03-15"),
+        "addresses": [
+            {
+                "street": "12 Maple St",
+                "zip_code": "E1 6AN",
+                "city": "London",
+                "country": "England",
+                "neighbours": [
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "A",
+                        "neighbour_email": "neighborA@email.com"
+                    },
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "B",
+                        "neighbour_email": "neighborB@email.com"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "first_name": "Person",
+        "last_name": "2",
+        "email": "person2@email.com",
+        "dob": new Date("1993-06-22"),
+        "addresses": [
+            {
+                "street": "45 Oak Ave",
+                "zip_code": "M1 2WD",
+                "city": "Manchester",
+                "country": "England",
+                "neighbours": [
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "C",
+                        "neighbour_email": "neighborC@email.com"
+                    },
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "D",
+                        "neighbour_email": "neighborD@email.com"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "first_name": "Person",
+        "last_name": "3",
+        "email": "person3@email.com",
+        "dob": new Date("1991-09-10"),
+        "addresses": [
+            {
+                "street": "89 Pine Rd",
+                "zip_code": "B1 1AB",
+                "city": "Birmingham",
+                "country": "England",
+                "neighbours": [
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "E",
+                        "neighbour_email": "neighborE@email.com"
+                    },
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "F",
+                        "neighbour_email": "neighborF@email.com"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "first_name": "Person",
+        "last_name": "4",
+        "email": "person4@email.com",
+        "dob": new Date("1998-12-05"),
+        "addresses": [
+            {
+                "street": "23 Birch St",
+                "zip_code": "EH1 1YZ",
+                "city": "Edinburgh",
+                "country": "Scotland",
+                "neighbours": [
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "G",
+                        "neighbour_email": "neighborG@email.com"
+                    },
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "H",
+                        "neighbour_email": "neighborH@email.com"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "first_name": "Person",
+        "last_name": "5",
+        "email": "person5@email.com",
+        "dob": new Date("1983-11-30"),
+        "addresses": [
+            {
+                "street": "67 Cedar Ln",
+                "zip_code": "BS1 3XE",
+                "city": "Bristol",
+                "country": "England",
+                "neighbours": [
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "I",
+                        "neighbour_email": "neighborI@email.com"
+                    },
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "J",
+                        "neighbour_email": "neighborJ@email.com"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "first_name": "Person",
+        "last_name": "6",
+        "email": "person6@email.com",
+        "dob": new Date("1989-07-18"),
+        "addresses": [
+            {
+                "street": "56 Elm St",
+                "zip_code": "L1 1AA",
+                "city": "Liverpool",
+                "country": "England",
+                "neighbours": [
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "K",
+                        "neighbour_email": "neighborK@email.com"
+                    },
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "L",
+                        "neighbour_email": "neighborL@email.com"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "first_name": "Person",
+        "last_name": "7",
+        "email": "person7@email.com",
+        "dob": new Date("1996-04-25"),
+        "addresses": [
+            {
+                "street": "12 Maple St",
+                "zip_code": "G1 2TF",
+                "city": "Glasgow",
+                "country": "Scotland",
+                "neighbours": [
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "M",
+                        "neighbour_email": "neighborM@email.com"
+                    },
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "N",
+                        "neighbour_email": "neighborN@email.com"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "first_name": "Person",
+        "last_name": "8",
+        "email": "person8@email.com",
+        "dob": new Date("1990-01-09"),
+        "addresses": [
+            {
+                "street": "89 Oak Dr",
+                "zip_code": "LS1 3AB",
+                "city": "Leeds",
+                "country": "England",
+                "neighbours": [
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "O",
+                        "neighbour_email": "neighborO@email.com"
+                    },
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "P",
+                        "neighbour_email": "neighborP@email.com"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "first_name": "Person",
+        "last_name": "9",
+        "email": "person9@email.com",
+        "dob": new Date("1993-08-17"),
+        "addresses": [
+            {
+                "street": "123 Pine Rd",
+                "zip_code": "NE1 2AB",
+                "city": "Newcastle",
+                "country": "England",
+                "neighbours": [
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "Q",
+                        "neighbour_email": "neighborQ@email.com"
+                    },
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "R",
+                        "neighbour_email": "neighborR@email.com"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "first_name": "Person",
+        "last_name": "10",
+        "email": "person10@email.com",
+        "dob": new Date("1997-10-22"),
+        "addresses": [
+            {
+                "street": "15 Elm St",
+                "zip_code": "CF10 3AF",
+                "city": "Cardiff",
+                "country": "Wales",
+                "neighbours": [
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "S",
+                        "neighbour_email": "neighborS@email.com"
+                    },
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "T",
+                        "neighbour_email": "neighborT@email.com"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "first_name": "Person",
+        "last_name": "11",
+        "email": "person11@email.com",
+        "dob": new Date("1992-05-13"),
+        "addresses": [
+            {
+                "street": "78 Oak Ln",
+                "zip_code": "S1 4GT",
+                "city": "Sheffield",
+                "country": "England",
+                "neighbours": [
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "U",
+                        "neighbour_email": "neighborU@email.com"
+                    },
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "V",
+                        "neighbour_email": "neighborV@email.com"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "first_name": "Person",
+        "last_name": "12",
+        "email": "person12@email.com",
+        "dob": new Date("1986-02-27"),
+        "addresses": [
+            {
+                "street": "56 Birch Rd",
+                "zip_code": "NG1 2PB",
+                "city": "Nottingham",
+                "country": "England",
+                "neighbours": [
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "W",
+                        "neighbour_email": "neighborW@email.com"
+                    },
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "X",
+                        "neighbour_email": "neighborX@email.com"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "first_name": "Person",
+        "last_name": "13",
+        "email": "person13@email.com",
+        "dob": new Date("1991-11-25"),
+        "addresses": [
+            {
+                "street": "10 Holy St",
+                "zip_code": "CF10 2NF",
+                "city": "Cardiff",
+                "country": "Wales",
+                "neighbours": [
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "Y",
+                        "neighbour_email": "neighborY@email.com"
+                    },
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "Z",
+                        "neighbour_email": "neighborZ@email.com"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "first_name": "Person",
+        "last_name": "14",
+        "email": "person14@email.com",
+        "dob": new Date("1987-02-01"),
+        "addresses": [
+            {
+                "street": "34 Willow Rd",
+                "zip_code": "EH1 1AB",
+                "city": "Edinburgh",
+                "country": "Scotland",
+                "neighbours": [
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "AA",
+                        "neighbour_email": "neighborAA@email.com"
+                    },
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "AB",
+                        "neighbour_email": "neighborAB@email.com"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "first_name": "Person",
+        "last_name": "15",
+        "email": "person15@email.com",
+        "dob": new Date("1984-08-12"),
+        "addresses": [
+            {
+                "street": "78 Cedar Ave",
+                "zip_code": "CB1 2SE",
+                "city": "Cambridge",
+                "country": "England",
+                "neighbours": [
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "AC",
+                        "neighbour_email": "neighborAC@email.com"
+                    },
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "AD",
+                        "neighbour_email": "neighborAD@email.com"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "first_name": "Person",
+        "last_name": "16",
+        "email": "person16@email.com",
+        "dob": new Date("1990-03-09"),
+        "addresses": [
+            {
+                "street": "45 Maple Rd",
+                "zip_code": "OX2 6TP",
+                "city": "Oxford",
+                "country": "England",
+                "neighbours": [
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "AE",
+                        "neighbour_email": "neighborAE@email.com"
+                    },
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "AF",
+                        "neighbour_email": "neighborAF@email.com"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "first_name": "Person",
+        "last_name": "17",
+        "email": "person17@email.com",
+        "dob": new Date("1995-11-17"),
+        "addresses": [
+            {
+                "street": "23 Birch Ave",
+                "zip_code": "SO14 3HL",
+                "city": "Southampton",
+                "country": "England",
+                "neighbours": [
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "AG",
+                        "neighbour_email": "neighborAG@email.com"
+                    },
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "AH",
+                        "neighbour_email": "neighborAH@email.com"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "first_name": "Person",
+        "last_name": "18",
+        "email": "person18@email.com",
+        "dob": new Date("1994-06-20"),
+        "addresses": [
+            {
+                "street": "12 Elm Blvd",
+                "zip_code": "LE1 3PL",
+                "city": "Leicester",
+                "country": "England",
+                "neighbours": [
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "AI",
+                        "neighbour_email": "neighborAI@email.com"
+                    },
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "AJ",
+                        "neighbour_email": "neighborAJ@email.com"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "first_name": "Person",
+        "last_name": "19",
+        "email": "person19@email.com",
+        "dob": new Date("1992-12-11"),
+        "addresses": [
+            {
+                "street": "56 Oak Rd",
+                "zip_code": "NR1 4BE",
+                "city": "Norwich",
+                "country": "England",
+                "neighbours": [
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "AK",
+                        "neighbour_email": "neighborAK@email.com"
+                    },
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "AL",
+                        "neighbour_email": "neighborAL@email.com"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "first_name": "Person",
+        "last_name": "20",
+        "email": "person20@email.com",
+        "dob": new Date("1988-09-25"),
+        "addresses": [
+            {
+                "street": "89 Pine Ave",
+                "zip_code": "CF10 3BC",
+                "city": "Cardiff",
+                "country": "Wales",
+                "neighbours": [
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "AM",
+                        "neighbour_email": "neighborAM@email.com"
+                    },
+                    {
+                        "neighbour_first_name": "Neighbor",
+                        "neighbour_last_name": "AN",
+                        "neighbour_email": "neighborAN@email.com"
+                    }
+                ]
+            }
+        ]
+    }
+]);
+

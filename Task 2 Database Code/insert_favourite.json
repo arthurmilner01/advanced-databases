@@ -1,0 +1,241 @@
+var person1 = db.Person.findOne({ "email": "person1@email.com" })._id;
+var person2 = db.Person.findOne({ "email": "person2@email.com" })._id;
+var person3 = db.Person.findOne({ "email": "person3@email.com" })._id;
+var person4 = db.Person.findOne({ "email": "person4@email.com" })._id;
+var person5 = db.Person.findOne({ "email": "person5@email.com" })._id;
+var person6 = db.Person.findOne({ "email": "person6@email.com" })._id;
+var person7 = db.Person.findOne({ "email": "person7@email.com" })._id;
+var person8 = db.Person.findOne({ "email": "person8@email.com" })._id;
+var person9 = db.Person.findOne({ "email": "person9@email.com" })._id;
+var person10 = db.Person.findOne({ "email": "person10@email.com" })._id;
+var person11 = db.Person.findOne({ "email": "person11@email.com" })._id;
+var person12 = db.Person.findOne({ "email": "person12@email.com" })._id;
+var person13 = db.Person.findOne({ "email": "person13@email.com" })._id;
+var person14 = db.Person.findOne({ "email": "person14@email.com" })._id;
+var person15 = db.Person.findOne({ "email": "person15@email.com" })._id;
+var person16 = db.Person.findOne({ "email": "person16@email.com" })._id;
+var person17 = db.Person.findOne({ "email": "person17@email.com" })._id;
+var person18 = db.Person.findOne({ "email": "person18@email.com" })._id;
+var person19 = db.Person.findOne({ "email": "person19@email.com" })._id;
+var person20 = db.Person.findOne({ "email": "person20@email.com" })._id;
+
+
+
+db.Favourite.insertMany([
+    { 
+        "favourite_name": "A New Beginning", 
+        "favourite_type": "Book",
+        "person_ids": [person1]
+    },
+    { 
+        "favourite_name": "The Road to Success", 
+        "favourite_type": "Book",
+        "person_ids": [person2]
+    },
+    { 
+        "favourite_name": "Endless Possibilities", 
+        "favourite_type": "Book",
+        "person_ids": [person3]
+    },
+    { 
+        "favourite_name": "Journey of Life", 
+        "favourite_type": "Book",
+        "person_ids": [person4]
+    },
+    { 
+        "favourite_name": "The Adventure Continues", 
+        "favourite_type": "Book",
+        "person_ids": [person5, person20]
+    },
+    { 
+        "favourite_name": "Finding Inner Peace", 
+        "favourite_type": "Book",
+        "person_ids": [person6]
+    },
+    { 
+        "favourite_name": "Exploring New Horizons", 
+        "favourite_type": "Book",
+        "person_ids": [person7]
+    },
+    { 
+        "favourite_name": "The Great Journey", 
+        "favourite_type": "Book",
+        "person_ids": [person8]
+    },
+    { 
+        "favourite_name": "The Power of Change", 
+        "favourite_type": "Book",
+        "person_ids": [person9]
+    },
+    { 
+        "favourite_name": "New Beginnings Await", 
+        "favourite_type": "Book",
+        "person_ids": [person10, person13]
+    },
+    { 
+        "favourite_name": "Wandering Souls", 
+        "favourite_type": "Book",
+        "person_ids": [person11] 
+    },
+    { 
+        "favourite_name": "Freedom and Choice", 
+        "favourite_type": "Book",
+        "person_ids": [person12]
+    },
+    { 
+        "favourite_name": "Chasing Dreams", 
+        "favourite_type": "Book",
+        "person_ids": [person14]
+    },
+    { 
+        "favourite_name": "The Endless Journey", 
+        "favourite_type": "Book",
+        "person_ids": [person15]
+    },
+    { 
+        "favourite_name": "The Future Ahead", 
+        "favourite_type": "Book",
+        "person_ids": [person16] 
+    },
+    { 
+        "favourite_name": "The Path to Glory", 
+        "favourite_type": "Book",
+        "person_ids": [person17]
+    },
+    { 
+        "favourite_name": "Life’s Adventure", 
+        "favourite_type": "Book",
+        "person_ids": [person18]
+    },
+    { 
+        "favourite_name": "Into the Wild", 
+        "favourite_type": "Book",
+        "person_ids": [person19]
+    },
+    { 
+        "favourite_name": "Lemonade", 
+        "favourite_type": "Drink", 
+        "person_ids": [person1, person14] 
+    },
+    { 
+        "favourite_name": "Coffee", 
+        "favourite_type": "Drink", 
+        "person_ids": [person2] 
+    },
+    { 
+        "favourite_name": "Smoothie", 
+        "favourite_type": "Drink", 
+        "person_ids": [person3, person13] 
+    },
+    { 
+        "favourite_name": "Iced Tea", 
+        "favourite_type": "Drink", 
+        "person_ids": [person4] 
+    },
+    { 
+        "favourite_name": "Green Tea", 
+        "favourite_type": "Drink", 
+        "person_ids": [person5, person17] 
+    },
+    { 
+        "favourite_name": "Coconut Water", 
+        "favourite_type": "Drink", 
+        "person_ids": [person6, person18] 
+    },
+    { 
+        "favourite_name": "Fruit Juice", 
+        "favourite_type": "Drink", 
+        "person_ids": [person7, person16] 
+    },
+    { 
+        "favourite_name": "Water", 
+        "favourite_type": "Drink", 
+        "person_ids": [person8, person20] 
+    },
+    { 
+        "favourite_name": "Hot Chocolate", 
+        "favourite_type": "Drink", 
+        "person_ids": [person9] 
+    },
+    { 
+        "favourite_name": "Fruit Smoothie", 
+        "favourite_type": "Drink", 
+        "person_ids": [person10] 
+    },
+    { 
+        "favourite_name": "Sparkling Water", 
+        "favourite_type": "Drink", 
+        "person_ids": [person11] 
+    },
+    { 
+        "favourite_name": "Herbal Tea", 
+        "favourite_type": "Drink", 
+        "person_ids": [person12, person19] 
+    },
+    { 
+        "favourite_name": "Iced Coffee", 
+        "favourite_type": "Drink", 
+        "person_ids": [person15] 
+    },
+    { 
+        "favourite_name": "Outdoor Running", 
+        "favourite_type": "Activity", 
+        "person_ids": [person1] 
+    },
+    { 
+        "favourite_name": "Hiking", 
+        "favourite_type": "Activity", 
+        "person_ids": [person2, person8, person13, person18, person20] 
+    },
+    { 
+        "favourite_name": "Swimming", 
+        "favourite_type": "Activity", 
+        "person_ids": [person3, person19] 
+    },
+    { 
+        "favourite_name": "Traveling", 
+        "favourite_type": "Activity", 
+        "person_ids": [person4] 
+    },
+    { 
+        "favourite_name": "Gardening", 
+        "favourite_type": "Activity", 
+        "person_ids": [person5, person17] 
+    },
+    { 
+        "favourite_name": "Reading", 
+        "favourite_type": "Activity", 
+        "person_ids": [person6] 
+    },
+    { 
+        "favourite_name": "Cycling", 
+        "favourite_type": "Activity", 
+        "person_ids": [person7, person15] 
+    },
+    { 
+        "favourite_name": "Skiing", 
+        "favourite_type": "Activity", 
+        "person_ids": [person9] 
+    },
+    { 
+        "favourite_name": "Jogging", 
+        "favourite_type": "Activity", 
+        "person_ids": [person10] 
+    },
+    { 
+        "favourite_name": "Rock Climbing", 
+        "favourite_type": "Activity", 
+        "person_ids": [person11] 
+    },
+    { 
+        "favourite_name": "Yoga", 
+        "favourite_type": "Activity", 
+        "person_ids": [person12, person16] 
+    },
+    { 
+        "favourite_name": "Running", 
+        "favourite_type": "Activity", 
+        "person_ids": [person14] 
+    }
+]);
+

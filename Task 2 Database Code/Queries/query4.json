@@ -1,0 +1,23 @@
+db.Person.aggregate([
+  {
+    $unwind: "$addresses"
+  },
+  {
+    $group: {
+      _id: "$addresses.city",
+      population: { $sum: 1 }
+    }
+  },
+  {
+    $project: {
+      city: "$_id",
+      population: 1,
+      _id: 0
+    }
+  },
+  {
+    $sort: { population: 1 }
+  }
+]);
+
+
